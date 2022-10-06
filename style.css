@@ -131,18 +131,34 @@ header .container{
 section{
 	padding: 60px 0;
 	position: relative;
+	overflow: hidden;
 }
-.section-bg{
+.section-bg img{
 	position: absolute;
-	display: none;
+	top: 0;
+	left: 0;
+}
+section .left-img{
+	transform: translate(0%, -15%);
+}
+section .bottom-img{
+	left: 25%;
+	top: 80%;
+}
+section .right-img{
+	left: 73%;
+	top: 16%;
+}
+section .container{
+	padding: 0 120px;
+	position: relative;
 }
 section .wrapper{
-	width: 100%;
 	height: auto;
 	box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.25);
 	border-radius: 70px;
-	position: relative;
 	padding: 30px 74px 60px;
+	position: relative;
 }
 section h1{
 	font-weight: 600;
