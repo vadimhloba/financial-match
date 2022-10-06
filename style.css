@@ -128,7 +128,7 @@ header .container{
 
 
 /* section styles START */
-section{
+.great-news{
 	padding: 60px 0;
 	position: relative;
 	overflow: hidden;
@@ -138,36 +138,45 @@ section{
 	top: 0;
 	left: 0;
 }
-section .left-img{
+.great-news .left-img{
 	transform: translate(0%, -15%);
 }
-section .bottom-img{
+.great-news .bottom-img{
 	left: 25%;
 	top: 80%;
 }
-section .right-img{
+.great-news .right-img{
 	left: 73%;
 	top: 16%;
 }
-section .container{
+.great-news .container{
 	padding: 0 120px;
 	position: relative;
+	z-index: 2;
 }
-section .wrapper{
+.great-news .wrapper{
+	background-color: #fff;
+	background-image: url(./img/decoration-bg.png);
+	width: 100%;
 	height: auto;
+	overflow: hidden;
 	box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.25);
 	border-radius: 70px;
-	padding: 30px 74px 60px;
+	padding: 30px 74px 30px 60px;
 	position: relative;
 }
-section h1{
+.great-news .wrapper div{
+	margin-right: auto;
+	margin-left: auto;
+}
+.great-news h1{
 	font-weight: 600;
 	font-size: 40px;
 	line-height: 60px;
 	color: #5FC6C1;
 	margin-bottom: 30px;
 }
-section li{
+.great-news li{
 	font-weight: 600;
 	font-size: 20px;
 	line-height: 30px;
@@ -175,32 +184,42 @@ section li{
 	text-align-last: left;
 	margin-bottom: 20px;
 }
-section li:last-child{
+.great-news li:last-child{
 	margin-bottom: 30px;
 }
-section h2{
+.great-news .circle-down{
+	padding: 2px 15px 0;
+	margin-right: 20px;
+	background-image: url(./img/circle-down.svg);
+	max-width: 30px;
+	max-height: 30px;
+}
+.great-news h2{
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 30px;
 	color: #146D70;
 }
-section p{
+.great-news p{
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 24px;
 	color: #146D70;
 }
-.watches svg{
+.great-news .watches svg{
 	width: 100%;
 }
-section h2{
+.great-news h2{
 	margin-top: 20px;
 	margin-bottom: 28px;
 }
-section button{
+.great-news button{
 	width: 100%;
 }
-section p{
+.great-news .section-desc{
+	max-width: 736px;
+}
+.great-news p{
 	margin-top: 20px;
 }
 /* section styles END */
