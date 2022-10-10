@@ -94,7 +94,7 @@ body{
 		width: 1280px;
 	}
 }
-h1, h2, p, a, li{
+h1, h2, h3, p, a, li{
 	font-family: 'Poppins';
 	text-align: center;
 }
@@ -156,7 +156,6 @@ header .container{
 }
 .great-news .wrapper{
 	background-color: #fff;
-	background-image: url(./img/decoration-bg.png);
 	width: 100%;
 	height: auto;
 	overflow: hidden;
@@ -165,9 +164,54 @@ header .container{
 	padding: 30px 74px 30px 60px;
 	position: relative;
 }
+.great-news .wrapper.def-wrapper{
+	display: flex;
+	padding: 0;
+}
+.great-news .tab-wrapper{
+	display: none;
+	background-image: url(./img/tab-decoration.png);
+}
 .great-news .wrapper div{
 	margin-right: auto;
 	margin-left: auto;
+}
+.great-news .col-one{
+	width: calc(50% + 20px);
+	padding: 75px 67px 161px 59px;
+}
+.great-news .col-two{
+	width: calc(50% - 20px);
+	padding: 168px 33px 166px 47px;
+	background: #146D70;
+	box-shadow: -3px 0px 5px rgba(0, 0, 0, 0.25);
+	background-image: url(./img/def-decoration.png);
+}
+.great-news .def-wrapper .btn-next button{
+	width: 100%;
+}
+.great-news .def-wrapper .calc-text h3{
+	background: #FFFFFF;
+	box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.25);
+	border-radius: 15px;
+	max-width: 290px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 4px 0;
+	font-weight: 600;
+	font-size: 33px;
+	line-height: 50px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #146D70;
+}
+.great-news .def-wrapper .title h1{
+	font-size: 45px;
+	line-height: 68px;
+	max-width: 339px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 48px;
 }
 .great-news h1{
 	font-weight: 600;
@@ -175,6 +219,12 @@ header .container{
 	line-height: 60px;
 	color: #5FC6C1;
 	margin-bottom: 30px;
+}
+.great-news .def-wrapper li{
+	margin-bottom: 25px;
+}
+.great-news .def-wrapper li:last-child{
+	margin-bottom: 0;
 }
 .great-news li{
 	font-weight: 600;
@@ -191,8 +241,6 @@ header .container{
 	padding: 2px 15px 0;
 	margin-right: 20px;
 	background-image: url(./img/circle-down.svg);
-	max-width: 30px;
-	max-height: 30px;
 }
 .great-news h2{
 	font-weight: 500;

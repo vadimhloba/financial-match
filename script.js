@@ -1,4 +1,4 @@
-// Timer
+// Timer START
 (function(){
 
   const timer_counter = e => {
@@ -29,3 +29,15 @@
   });
 
 })()
+// Timer END
+
+
+// Tab-block START
+const btnNext = document.querySelector('.great-news .def-wrapper .btn-next button'),
+			wrapperTab = document.querySelector('.great-news .tab-wrapper'),
+			wrapperDef = document.querySelector('.great-news .def-wrapper')
+btnNext.addEventListener('click', () =>{
+	wrapperTab.style.display = 'block'
+	wrapperDef.style.display = 'none'
+})
+// Tab-block END
