@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-family: Poppins;
 }
 ol, ul {
 	list-style: none;
@@ -94,10 +95,7 @@ body{
 		width: 1280px;
 	}
 }
-h1, h2, h3, p, a, li{
-	font-family: 'Poppins';
-	text-align: center;
-}
+
 img{
 	max-width: 100%;
 	height: auto;
@@ -132,6 +130,9 @@ header .container{
 	padding: 60px 0;
 	position: relative;
 	overflow: hidden;
+}
+.great-news h1, h2, h3, p, a{
+	text-align: center;
 }
 .section-bg img{
 	position: absolute;
@@ -185,7 +186,6 @@ header .container{
 	padding: 168px 33px 166px 47px;
 	background: #146D70;
 	box-shadow: -3px 0px 5px rgba(0, 0, 0, 0.25);
-	background-image: url(./img/def-decoration.png);
 }
 .great-news .def-wrapper .btn-next button{
 	width: 100%;
@@ -226,6 +226,9 @@ header .container{
 .great-news .def-wrapper li:last-child{
 	margin-bottom: 0;
 }
+.great-news ul{
+	margin-bottom: 30px;
+}
 .great-news li{
 	font-weight: 600;
 	font-size: 20px;
@@ -233,14 +236,8 @@ header .container{
 	color: #146D70;
 	text-align-last: left;
 	margin-bottom: 20px;
-}
-.great-news li:last-child{
-	margin-bottom: 30px;
-}
-.great-news .circle-down{
-	padding: 2px 15px 0;
-	margin-right: 20px;
-	background-image: url(./img/circle-down.svg);
+	background: url(./img/circle-down.svg) no-repeat left center;
+	padding-left: 50px;
 }
 .great-news h2{
 	font-weight: 500;
