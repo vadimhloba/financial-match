@@ -44,14 +44,36 @@ range.addEventListener('input', e => {
 
 
 const popupLink = document.querySelectorAll('.popup-link'),
-			popup = document.querySelector('.popup')
+			popup = document.querySelector('.popup'),
+			popupContent = document.querySelector('.popup__content'),
+			body = document.querySelector('body'),
+			closePopup = document.querySelector('.close-popup')
+
 popupLink.forEach(el => {
   el.addEventListener('click', e => {
     e.preventDefault();
     popup.classList.add('open')
+		popupContent.classList.add('active')
+		body.classList.add('active')
+		window.scrollBy(0, 100);
   })
 })
 
+closePopup.addEventListener('click', e => {
+    e.preventDefault();
+    popup.classList.remove('open')
+		popupContent.classList.remove('active')
+		body.classList.remove('active')
+  })
+
+popup.addEventListener('click', e => {
+  e.preventDefault();
+	let a = e.target.style.backgroundColor
+	console.log(a)
+  popup.classList.remove('open')
+	popupContent.classList.remove('active')
+	body.classList.remove('active')
+})
 /*
 
 // Popup START
