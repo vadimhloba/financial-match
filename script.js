@@ -42,6 +42,18 @@ range.addEventListener('input', e => {
 })
 // Input [type='range'] END
 
+
+const popupLink = document.querySelectorAll('.popup-link'),
+			popup = document.querySelector('.popup')
+popupLink.forEach(el => {
+  el.addEventListener('click', e => {
+    e.preventDefault();
+    popup.classList.add('open')
+  })
+})
+
+/*
+
 // Popup START
 const popupLink = document.querySelectorALL('.popup-link')
 const body = document.querySelector('body')
@@ -142,3 +154,5 @@ document.addEventListener('keydown', function (e) {
 	}
 })
 // Popup END
+
+*/
