@@ -45,35 +45,31 @@ range.addEventListener('input', e => {
 
 const popupLink = document.querySelectorAll('.popup-link'),
 			popup = document.querySelector('.popup'),
-			popupContent = document.querySelector('.popup__content'),
-			body = document.querySelector('body'),
-			closePopup = document.querySelector('.close-popup')
+			closePopup = document.querySelectorAll('.close-popup'),
+			popupTitle = document.querySelector('.popup__title'),
+			popupText = document.querySelector('.popup__text')
 
 popupLink.forEach(el => {
   el.addEventListener('click', e => {
     e.preventDefault();
+    popupTitle.innerHTML = e.target.innerHTML
+    popupText.innerHTML = document.getElementById(e.target.dataset.popup).innerHTML
     popup.classList.add('open')
-		popupContent.classList.add('active')
-		body.classList.add('active')
-		window.scrollBy(0, 100);
+		document.body.classList.add('active')
   })
 })
 
-closePopup.addEventListener('click', e => {
+closePopup.forEach(el => {
+  el.addEventListener('click', e => {
     e.preventDefault();
     popup.classList.remove('open')
-		popupContent.classList.remove('active')
-		body.classList.remove('active')
+		document.body.classList.remove('active')
+		popupTitle.innerHTML = ''
+		popupText.innerHTML = ''
   })
-
-popup.addEventListener('click', e => {
-  e.preventDefault();
-	let a = e.target.style.backgroundColor
-	console.log(a)
-  popup.classList.remove('open')
-	popupContent.classList.remove('active')
-	body.classList.remove('active')
 })
+
+
 /*
 
 // Popup START
